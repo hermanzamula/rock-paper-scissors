@@ -36,4 +36,9 @@ public class RandomPlayer implements RpsPlayer<SimpleFigure> {
         this.lastFigure = figure;
         return figure;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s(name=%s, figure=%s)", this.getClass().getSimpleName(), name, currentFigure());
+    }
 }
